@@ -2,6 +2,6 @@
 int main() {
     using namespace std;
     int x;
-      x = 1023;
+      x = 12;
       return x;
 }
