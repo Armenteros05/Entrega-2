@@ -1,4 +1,6 @@
 #include <iostream>
+#include "polimorfismo.h"
+
 using namespace std;
 
 void hola(){
@@ -7,18 +9,19 @@ void hola(){
 void hola(const string& nombre){
     cout << "Hola " << nombre << endl;
 }
+inline int suma(int a,int b);
 int main(){
     hola();
     hola("Jose");
-    int a;
+    int a=5;
     int b;
-    cout << "Introduce un valor para a: " << endl;
-    cin >> a;
     cout << "Introduce un valor para b: " << endl;
     cin >> b;
-    int suma= a + b;
-    cout << "La suma de dos numeros llamados a y b es:"<< suma << endl;
-    return 0;
+    int resultado= suma(a,b);
+    cout<< "La suma de a y b es: " << resultado << endl;
+}
+inline int suma(int a,int b){
+    return a+b;
 }
 
 
